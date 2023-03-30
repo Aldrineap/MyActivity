@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MyActivity</string>
+
+    <string name="save_your_photos_and_files_to">Save your photos and files to</string>
+    <string name="Firestore_and">Firestore and access them from any</string>
+    <string name="device_anywhere">device, anywhere.</string>
+    <string name="Firestore">Firestore</string>
+    <string name="logo_for_my_app">Logo for my app</string>
+
+    <string name="logo_small">logo_small</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Your Name</string>
+    <string name="email">Your Email</string>
+    <string name="Password">Your Password</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="firestore">Firestore</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="create_your_account_text">Lets create your account to save your files</string>
+    <string name="sign_up_button_text">Sign Up</string>
+    <string name="your_name_text">Your Name</string>
+    <string name="create_text">Create Your Account</string>
+    <string name="your_email_text">Your Email</string>
+    <string name="your_password_text">Your Password</string>
+    <string name="you_re_back">You are back</string>
+    <string name="login_an_account">Let\'s log in an account to save your files</string>
+    <string name="Log_in">Log in</string>
+    <string name="succes">successful!</string>
+    <string name="register">Registration</string>
+    <string name="thank_you_text">Thank you, we have sent email to you</string>
+    <string name="that_message_text">and a message to activate your account</string>
+    <string name="log_in"><![CDATA[Log in-->]]></string>
+    <string name="check_inbox_message">Please check inbox</string>
+
+
+</resources>

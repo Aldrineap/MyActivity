@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo_main_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_main_small"
+            app:layout_constraintBottom_toTopOf="@id/welcome_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/firestore_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo_main_small" />
+        <TextView
+            android:id="@+id/firestore_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/firestore"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/create_account_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_your_account_text"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/facebook_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firestore_text" />
+
+        <TextView
+            android:id="@+id/facebook_button"
+            android:layout_width="367dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/cardview_dark_background"
+            android:drawableStart="@drawable/ic_facebook"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="Continue with Facebook"
+            app:layout_constraintBottom_toTopOf="@id/google_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/create_account_text" />
+
+        <TextView
+            android:id="@+id/google_button"
+            android:layout_width="367dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardview_dark_background"
+            android:drawableStart="@drawable/ic_google"
+            android:focusable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:text="Continue with Google"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@id/sign_up_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/facebook_button" />
+
+        <RadioButton
+            android:id="@+id/sign_up_button"
+            android:button="@null"
+            android:layout_width="367dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gradient_background_image"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/sign_up_button_text"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/google_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
