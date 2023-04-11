@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyActivity3</string>
+    <string name="choose">Choose an Option</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="backToMainActivity">Home</string>
+    <string name="class_directory">Class Directory</string>
+    <string name="library_app">Library App</string>
+    <string name="grocery_app">Grocery App</string>
+    <string name="registered">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="e_mail">Email</string>
+    <string name="pass_word">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="log_in">Login</string>
+    <string name="reg">REGISTER</string>
+</resources>

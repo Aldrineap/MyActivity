@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Activity2</string>
+    <string name="proceed">Proceed!</string>
+    <string name="employment">Application for Employment</string>
+    <string name="per_info">Personal Information</string>
+    <string name="ed_attain">Educational Attainment</string>
+    <string name="emp_attain">Employment History</string>
+    <string name="refer">References</string>
+    <string name="Aknow_Authen">Acknowledgement and Authentication</string>
+    <string name="position_apply">Position you are applying for</string>
+    <string name="salary">Desired Salary</string>
+    <string name="position_for">Position applying for</string>
+    <string name="available">Date available for work</string>
+    <string name="salary_hint">your dream salary</string>
+    <string name="position_hint">your dream to be</string>
+    <string name="last_name">Last Name:</string>
+    <string name="firstName">First Name:</string>
+    <string name="middleName">Middle Name:</string>
+    <string name="address">Address:</string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+
+
+</resources>

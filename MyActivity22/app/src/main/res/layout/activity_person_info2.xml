@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonActivityPage2">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/employment"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <View
+        android:id="@+id/titleLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!--    Home Phone-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/homePhoneInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titleLineView"
+        android:layout_marginTop="16dp"
+        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.TextInputLayout.FilledBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/home_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/homePhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    Cellular Phone-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cellularPhoneInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/homePhoneInputLayout"
+        android:layout_marginTop="16dp"
+        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.TextInputLayout.FilledBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/cellular">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cellularPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--  SSS  -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/socialSecurityInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cellularPhoneInputLayout"
+        android:layout_marginTop="16dp"
+        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.TextInputLayout.FilledBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/socialSecurity">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/socialSecurityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    Citizenship-->
+    <TextView
+        android:id="@+id/areYouCitizen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/areYou"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/socialSecurityInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/socialSecurityInputLayout"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/usYesCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Yes"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@+id/socialSecurityInputLayout"
+        app:layout_constraintStart_toEndOf="@id/areYouCitizen"
+        app:layout_constraintBottom_toTopOf="@+id/felonyYesCheckBox"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/usNoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/No"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@+id/socialSecurityInputLayout"
+        app:layout_constraintStart_toEndOf="@id/usYesCheckBox"
+        app:layout_constraintEnd_toEndOf="@+id/socialSecurityInputLayout"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!--    Felony-->
+    <TextView
+        android:id="@+id/convictedFelony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aFelony"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/areYouCitizen"
+        app:layout_constraintStart_toStartOf="@+id/areYouCitizen"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="30dp"/>
+
+    <CheckBox
+        android:id="@+id/felonyYesCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Yes"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@+id/usYesCheckBox"
+        app:layout_constraintStart_toStartOf="@+id/usYesCheckBox"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/felonyNoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/No"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@+id/convictedFelony"
+        app:layout_constraintEnd_toEndOf="@+id/socialSecurityInputLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!--    If selected-->
+    <TextView
+        android:id="@+id/selectedEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AreYou"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/felonyYesCheckBox"
+        app:layout_constraintStart_toStartOf="@+id/convictedFelony"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:id="@+id/selectYesCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Yes"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@+id/selectedEmployee"
+        app:layout_constraintStart_toStartOf="@+id/felonyYesCheckBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/selectNoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/No"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@+id/selectedEmployee"
+        app:layout_constraintEnd_toEndOf="@+id/socialSecurityInputLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="80dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

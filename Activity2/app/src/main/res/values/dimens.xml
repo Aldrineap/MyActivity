@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+        <!-- Text sizes -->
+        <dimen name="text_size_large">24sp</dimen>
+        <dimen name="text_size_medium">18sp</dimen>
+        <dimen name="text_size_small">14sp</dimen>
+
+        <!-- Padding and margin values -->
+        <dimen name="padding_large">16dp</dimen>
+        <dimen name="padding_medium">8dp</dimen>
+        <dimen name="padding_small">4dp</dimen>
+
+        <dimen name="margin_large">16dp</dimen>
+        <dimen name="margin_medium">8dp</dimen>
+        <dimen name="margin_small">4dp</dimen>
+
+                <dimen name="material_text_body_1">16sp</dimen>
+
+
+
+</resources>

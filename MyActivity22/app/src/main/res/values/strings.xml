@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MyActivity2</string>
+    <string name="employment">Application for Employment</string>
+    <string name="per_info">Personal Information</string>
+    <string name="ed_attain">Educational Attainment</string>
+    <string name="emp_attain">Employment History</string>
+    <string name="refer">References</string>
+    <string name="know_ledge"><![CDATA[Aknowledgement & Authentication]]></string>
+    <string name="position_for">Position Desired</string>
+    <string name="salary">Desired Salary</string>
+    <string name="available">Availability Date</string>
+    <string name="personal">Personal Information</string>
+    <string name="last_name">Last Name</string>
+    <string name="firstName">First Name :</string>
+    <string name="middleName">Middle Name:</string>
+    <string name="address">Address:</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="next">Next Page</string>
+    <string name="home_phone">Home Phone</string>
+    <string name="cellular">Cellular Phone</string>
+    <string name="socialSecurity">Socail Security Number</string>
+    <string name="areYou">Are you a US citizen?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="aFelony">Have you ever been convicted of a felony</string>
+    <string name="AreYou">Are you willing to submit pre-employment drug test if ever selected?</string>
+    <string name="back">Home Page</string>
+    <string name="educational">Educational Attainment</string>
+    <string name="schoolName">School Name</string>
+    <string name="locate">Location</string>
+    <string name="yearAttend">Years Attended</string>
+    <string name="degreeRec">Degree Received</string>
+    <string name="majorIn">Major</string>
+    <string name="typeAnother">Enter another School</string>
+    <string name="toHome">Home</string>
+
+</resources>
