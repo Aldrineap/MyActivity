@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyActivity"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".NewMember.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivitySignUp"
+            android:name=".NewMember.ActivitySignUp"
             android:label="Activity SignUp"
             android:exported="true">
             <intent-filter>
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
                <activity
-            android:name=".CreateAccountActivity"
+            android:name=".NewMember.CreateAccountActivity"
             android:label="Create Account Activity"
             android:exported="true">
             <intent-filter>
@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LogInActivity"
+            android:name=".NewMember.LogInActivity"
             android:exported="true"
             android:label="LogIn Activity">
             <intent-filter>
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegSuccess"
+            android:name=".NewMember.RegSuccess"
             android:exported="true"
             android:label="Reg Success">
             <intent-filter>

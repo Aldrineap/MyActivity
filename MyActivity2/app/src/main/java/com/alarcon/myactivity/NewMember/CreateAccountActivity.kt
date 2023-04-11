@@ -1,4 +1,4 @@
-package com.alarcon.myactivity
+package com.alarcon.myactivity.NewMember
 
 import android.content.Context
 import android.content.Intent
@@ -34,7 +34,7 @@ class CreateAccountActivity : AppCompatActivity() {
             editor.putString("email_$email", email)
             editor.putString("password_$email", hashPassword(password))
             editor.apply()
-            startActivity(Intent(this,LogInActivity::class.java))
+            startActivity(Intent(this, LogInActivity::class.java))
         }
 
         binding.passwordEditText.addTextChangedListener(object : TextWatcher {

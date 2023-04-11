@@ -1,4 +1,4 @@
-package com.alarcon.myactivity
+package com.alarcon.myactivity.NewMember
 
 import android.content.Intent
 import android.content.SharedPreferences

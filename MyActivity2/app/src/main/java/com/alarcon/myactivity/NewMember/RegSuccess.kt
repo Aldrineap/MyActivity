@@ -1,9 +1,9 @@
-package com.alarcon.myactivity
+package com.alarcon.myactivity.NewMember
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.alarcon.myactivity.R
 import com.alarcon.myactivity.databinding.ActivityRegSuccessBinding
 
 class RegSuccess : AppCompatActivity() {
