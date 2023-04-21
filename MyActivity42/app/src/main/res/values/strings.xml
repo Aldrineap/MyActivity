@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyActivity4</string>
+    <string name="welcome_to_the_quiz_app">Welcome to the QUIZ app</string>
+    <string name="choose_the_option">Choose the Option</string>
+    <string name="history_quiz">History Quiz</string>
+    <string name="geography_quiz">Geography Quiz</string>
+    <string name="science_quiz">Science Quiz</string>
+    <string name="forex_quiz">Forex Quiz</string>
+    <string name="option_a">optionA</string>
+    <string name="option_b">optionB</string>
+    <string name="option_c">optionC</string>
+    <string name="option_d">optionD</string>
+    <string name="Next">Next</string>
+    <string name="back_to_home">Home</string>
+    <string name="question_goes_here">Question Goes here</string>
+</resources>

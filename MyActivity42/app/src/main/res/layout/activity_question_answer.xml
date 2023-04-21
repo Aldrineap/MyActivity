@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Question text -->
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="24dp"
+                android:padding="16dp"
+                android:text="@string/question_goes_here"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/optionRadioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/questionText">
+
+                <RadioButton
+                    android:id="@+id/optionARadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/option_a"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/optionBRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/option_b"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/optionCRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/option_c"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/optionDRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/option_d"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <!-- Next button -->
+            <Button
+                android:id="@+id/nextAnswerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:text="@string/Next"
+                app:layout_constraintTop_toBottomOf="@id/optionRadioGroup"
+                app:layout_constraintStart_toStartOf="@id/optionRadioGroup"
+                app:layout_constraintEnd_toEndOf="@id/optionRadioGroup"
+                app:layout_constraintBottom_toTopOf="@id/backToHomeButton"
+                android:padding="16dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+
+            <Button
+                android:id="@+id/backToHomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back_to_home"
+                app:layout_constraintTop_toBottomOf="@id/nextAnswerButton"
+                app:layout_constraintEnd_toEndOf="@id/nextAnswerButton"
+                app:layout_constraintStart_toStartOf="@id/nextAnswerButton"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:padding="16dp"
+                android:onClick="backToHomeOnClick" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>
+
